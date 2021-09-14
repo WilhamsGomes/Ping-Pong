@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #1f3f64;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+
+.quadra{
+    background-color: rgb(145, 179, 67);
+    width: 800px;
+    height: 400px;
+    margin-bottom: 300px;
+    margin-left: 350px;
+    border: solid white 10px;
+    animation: bg 1s infinite;
+}
+
+@keyframes bg{
+    0%{
+        border-color: white;
+    }
+
+    25%{
+        border-color: violet;
+    }
+    
+    50%{
+        border-color: rgb(255, 0, 0);
+    }
+
+    75%{
+        border-color: yellow;
+    }
+
+    100%{
+        border-color: tomato;
+    }
+}
+
+.conteiner{
+    display: flex;
+}
+
+.title{
+    display: block;
+    margin-left: 600px;
+    color: #f2354c;
+    animation: opc 4s infinite;
+}
+
+@keyframes opc{
+
+    50%{
+        opacity: 0%;
+    }
+
+}
+
+.title h3{
+    font-size: 60px;
+}
+
+.divisor{
+    position: absolute;
+    height: 400px;
+    background-color: white;
+    width: 6px;
+    margin-left: 400px;
+
+}
+
+.bat{
+    background-color: #dca956;
+    height: 120px;
+    width: 160px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 200px;
+    margin-left: -1030px;
+    animation: play 1.5s infinite;
+    transform-origin: right;
+}
+
+.bat-2{
+    background-color: #dca956;
+    height: 120px;
+    width: 160px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 880px;
+    animation: play 1.5s infinite;
+    transform-origin: right;
+}
+
+@keyframes play {
+    50%{
+        transform: rotate(78deg);
+    }
+}
+
+.handle{
+    height: 20px;
+    width: 0px;
+    border-left: 120px solid #dca956;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    transform: rotateY(180deg) rotate(-70deg);
+}
+
+.inner{
+    height: 13px;
+    width: 0;
+    border-left: 120px solid #f2ca89;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    position: relative;
+    right: 115px;
+    bottom: 14px;
+
+}
+
+.front{
+    background-color: #f2354c;
+    height: 115px;
+    width: 160px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 52px;
+}
+
+.ball{
+
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    animation: bounce 1.5s infinite;
+    margin-top: 200px;
+}
+
+@keyframes bounce{
+    50%{
+        transform: translateX(780px); 
+    }
+}
